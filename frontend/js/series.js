@@ -102,7 +102,7 @@ async function saveRow(button) {
 async function updateSeries(seriesId, updatedSeries) {
     try {
         const response = await fetch(`${apiUrl}/${seriesId}`, {
-            method: 'PATCH',
+            method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedSeries)
         });

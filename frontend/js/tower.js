@@ -116,7 +116,7 @@ async function saveRow(button) {
 async function updateTower(towerId, updatedTower) {
     try {
         const response = await fetch(`${apiUrl}/${towerId}`, {
-            method: 'PATCH',
+            method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedTower)
         });
