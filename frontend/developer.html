@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Developer</title>
+    <link rel="stylesheet" href="css/developer.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Real Estate Dashboard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="developer.html">Developer</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="tower.html">Tower</a></li>
+                <li><a href="series.html">Series</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button id="addDeveloperBtn">Add Developer</button>
+        <button id="developerListBtn">Developer List</button>
+    </div>
+
+    <section id="add-developer">
+        <div class="form-container">
+            <h2>Add Developer</h2>
+            <form id="developerForm">
+                <input type="hidden" id="developerId" name="developerId">
+                <label for="developerName">Developer Name</label>
+                <input type="text" id="developerName" name="developerName" required>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="incorporationDate">Incorporation Date</label>
+                <input type="date" id="incorporationDate" name="incorporationDate" required>
+
+                <label for="totalProjectsDelivered">Total Projects Delivered</label>
+                <input type="number" id="totalProjectsDelivered" name="totalProjectsDelivered" required>
+
+                <label for="totalSqFtDelivered">Total Sq Ft Delivered</label>
+                <input type="number" id="totalSqFtDelivered" name="totalSqFtDelivered" required>
+
+                <label for="reasonForChoosingDeveloper">Reason For Choosing Developer</label>
+                <textarea id="reasonForChoosingDeveloper" name="reasonForChoosingDeveloper" required></textarea>
+
+                <label for="websiteLink">Website Link</label>
+                <input type="url" id="websiteLink" name="websiteLink" required>
+
+                <button type="submit">Add Developer</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="developer-data">
+        <h2>Developer Data</h2>
+        <table id="developerTable">
+            <thead>
+                <tr>
+                    <th>Developer Name</th>
+                    <th>Address</th>
+                    <th>Incorporation Date</th>
+                    <th>Total Projects Delivered</th>
+                    <th>Total Sq Ft Delivered</th>
+                    <th>Reason For Choosing</th>
+                    <th>Website Link</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here from the API -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/developer.js"></script>
+    <script>
+        // Function to toggle between the form and the list
+       
+    </script>
+</body>
+</html>

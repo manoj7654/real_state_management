@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Tower</title>
+    <link rel="stylesheet" href="css/tower.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Real Estate Dashboard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="developer.html">Developer</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="tower.html">Tower</a></li>
+                <li><a href="series.html">Series</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button id="addTowerBtn">Add Tower</button>
+        <button id="towerListBtn">Tower List</button>
+    </div>
+
+    <section id="add-tower">
+        <div class="form-container">
+            <h2>Add Tower</h2>
+            <form id="towerForm">
+                <label for="projectId">Project ID</label>
+                <input type="text" id="projectId" name="projectId" required>
+
+                <label for="developerId">Developer ID</label>
+                <input type="text" id="developerId" name="developerId" required>
+
+                <label for="towerNumber">Tower Number</label>
+                <input type="text" id="towerNumber" name="towerNumber" required>
+
+                <label for="towerName">Tower Name</label>
+                <input type="text" id="towerName" name="towerName" required>
+
+                <label for="towerPhase">Tower Phase</label>
+                <input type="text" id="towerPhase" name="towerPhase" required>
+
+                <label for="phaseReraNumber">Phase RERA Number</label>
+                <input type="text" id="phaseReraNumber" name="phaseReraNumber" required>
+
+                <label for="deliveryTimeline">Delivery Timeline</label>
+                <input type="date" id="deliveryTimeline" name="deliveryTimeline" required>
+
+                <label for="currentStatus">Current Status</label>
+                <input type="text" id="currentStatus" name="currentStatus" required>
+
+                <label for="duplicateTowerOption">Duplicate Tower Option</label>
+                <input type="radio" id="duplicateTowerOption" name="duplicateTowerOption" >
+
+                <label for="totalFloors">Total Floors</label>
+                <input type="number" id="totalFloors" name="totalFloors" required>
+
+                <label for="towerCoreDetails">Tower Core Details</label>
+                <textarea id="towerCoreDetails" name="towerCoreDetails" required></textarea>
+
+                <button type="submit">Add Tower</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="tower-data">
+        <h2>Tower Data</h2>
+        <table id="towerTable">
+            <thead>
+                <tr>
+                    <th>Project ID</th>
+                    <th>Developer ID</th>
+                    <th>Tower Number</th>
+                    <th>Tower Name</th>
+                    <th>Tower Phase</th>
+                    <th>Phase RERA Number</th>
+                    <th>Delivery Timeline</th>
+                    <th>Current Status</th>
+                    <th>Duplicate Tower Option</th>
+                    <th>Total Floors</th>
+                    <th>Tower Core Details</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here from the API -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/tower.js"></script>
+    <script>
+        // Function to toggle between the form and the list
+        
+    </script>
+</body>
+</html>

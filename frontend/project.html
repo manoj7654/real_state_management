@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Real Estate Dashboard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="developer.html">Developer</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="tower.html">Tower</a></li>
+                <li><a href="series.html">Series</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button id="addProjectBtn">Add Project</button>
+        <button id="projectListBtn">Project List</button>
+    </div>
+
+    <section id="add-project">
+        <div class="form-container">
+            <h2>Add Project</h2>
+            <form id="projectForm">
+                <label for="developerId">Developer ID</label>
+                <input type="text" id="developerId" name="developerId" required>
+
+                <label for="projectDetails">Project Details</label>
+                <input type="text" id="projectDetails" name="projectDetails" required>
+
+                <label for="reraStatus">RERA Status</label>
+                <input type="text" id="reraStatus" name="reraStatus" required>
+
+                <label for="financials">Financials</label>
+                <textarea id="financials" name="financials" required></textarea>
+
+                <label for="media">Media URLs (Comma separated)</label>
+                <input type="text" id="media" name="media" placeholder="Enter URLs separated by commas" required>
+
+                <button type="submit">Add Project</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="project-data">
+        <h2>Project Data</h2>
+        <table id="projectTable">
+            <thead>
+                <tr>
+                    <th>Developer ID</th>
+                    <th>Project Details</th>
+                    <th>RERA Status</th>
+                    <th>Financials</th>
+                    <th>Media URLs</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here from the API -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/project.js"></script>
+    <script>
+        // Function to toggle between the form and the list
+       
+    </script>
+</body>
+</html>

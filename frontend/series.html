@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Management</title>
+    <link rel="stylesheet" href="css/series.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Real Estate Dashboard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="developer.html">Developer</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="tower.html">Tower</a></li>
+                <li><a href="#series">Series</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button id="addSeriesBtn">Add Series</button>
+        <button id="seriesListBtn">Series List</button>
+    </div>
+
+    <section id="add-series" style="display:none;">
+        <div class="form-container">
+            <h2>Add Series</h2>
+            <form id="seriesForm">
+                <label for="seriesName">Series Name</label>
+                <input type="text" id="seriesName" name="seriesName" required>
+
+                <label for="towerId">Tower ID</label>
+                <input type="text" id="towerId" name="towerId" required>
+
+                <label for="seriesTypology">Series Typology</label>
+                <input type="text" id="seriesTypology" name="seriesTypology" required>
+
+                <label for="seriesDetails">Series Details</label>
+                <textarea id="seriesDetails" name="seriesDetails" required></textarea>
+
+                <label for="addOns">Add-Ons</label>
+                <textarea id="addOns" name="addOns"></textarea>
+
+                <button type="submit">Add Series</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="series-data" style="display:none;">
+        <h2>Series Data</h2>
+        <table id="seriesTable">
+            <thead>
+                <tr>
+                    <th>Series Name</th>
+                    <th>Tower ID</th>
+                    <th>Series Typology</th>
+                    <th>Series Details</th>
+                    <th>Add-Ons</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be populated here from the API -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/series.js"></script>
+   
+</body>
+</html>
